@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>Layout</title>
+  </head>
+  <body>
+   <section class="header mb">
+    <div class="container">
+     <div class="row">
+       <div class="col-md-2 col-sm-3 col-12" >
+         <div class="box">1.1</div>
+       </div>
+          <div class="col-md-7 col-sm-6 col-6">
+         <div class="box">1.2</div>
+       </div>
+        <div class="col-md-3 col-sm-3 col-6">
+         <div class="box">1.3</div>
+       </div>
+     </div>
+   </div>
+   </section>
+   <!-- header end -->
+   <section class="hero mb">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-8  col-sm-12 d-sm-block d-none">
+            <div class="box">2.1</div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="box">2.2</div>
+          </div>
+        </div>
+      </div> 
+      <div class="col-md-3 col-12 d-md-block d-sm-none d-none">
+        <div class="box green">3</div>
+      </div>
+      </div>
+    </div>
+     
+   </section>
+   <!-- hero end -->
+   <section class="body mb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 col-sm-9 col-12">
+              <div class="box body purple">4.1</div>
+            </div>
+            <div class="col-sm-3 col-12  d-md-none d-block">
+              <div class="box green">3</div>
+            </div>
+            <div class="col-md-8 col-12">
+              <div class="box body purple">4.2</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-md-block d-none">
+          <div class="box body">5</div>
+        </div>
+      </div>
+    </div>
+     
+   </section>
+   <!-- body end -->
+   <section class="bar mb">
+    <div class="container">
+     <div class="row">
+       <div class="col-12 d-md-none d-sm-block d-none">
+         <div class="box body">5</div>
+       </div>
+     </div>
+   </div>
+   </section>
+   <!-- bar end -->
+   <section class="footer mb">
+     <div class="container">
+       <div class="row">
+         <div class="col-12 d-sm-block d-none">
+           <div class="box sky">6.1</div>
+         </div>
+        <div class="col-12 d-block d-sm-none">
+           <div class="box sky">6</div>
+         </div>
+       </div>
+     </div>
+   </section>
+   <!-- foooter end -->
+
+<div class="container">
+   <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="f_name" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="f_name" value="Onas" required>
+      <div class="valid-feedback">Good!</div>
+    </div>
+    <div class="col-md-4">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="l_name" value="Ahmed" required>
+    <div class="valid-feedback">
+      Good!
+    </div>
+  </div>
+    <div class="col-md-4">
+
+      <label for="user" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="user">
+        <div class="invalid-feedback">
+          Please choose a username
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-6">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="state" class="form-label">State</label>
+    <select id="state" class="form-select" required>
+    <option selected disabled value="">Choose</option>
+    <option>abcd</option>
+  </select>
+  <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+    
+  </div>
+    <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+   </form>
+   </div>
+   <!-- form end -->
+   <h1>Random customize grid and Flex:</h1>
+   <p>This is grid with now column call:</p>
+   <div class="container">
+     <div class="row">
+       <div class="col">
+         <div class="box">col 1.1</div>
+       </div>
+       <div class="col">
+         <div class="box">col 1.2</div>
+       </div>
+       <div class="col">
+         <div class="box">col 1.3</div>
+       </div>
+     </div>
+   </div>
+   <p>Double row with now col-width call:</p>
+   <div class="container">
+     <div class="row">
+       <div class="col">
+         <div class="box green">2.1</div>
+       </div>
+       <div class="col">
+         <div class="box green">2.2</div>
+       </div>
+
+     </div>
+        <div class="row">
+       <div class="col">
+         <div class="box sky">3.1</div>
+       </div>
+       <div class="col">
+         <div class="box sky">3.2</div>
+       </div>
+       <div class="col">
+         <div class="box sky">3.3</div>
+       </div>
+     </div>
+
+   </div>
+   <p>Setting one col-width in container fluid:</p>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col">
+         <div class="box purple">
+           Auto
+         </div>
+       </div>
+       <div class="col-5">
+         <div class="box">
+           col-5
+         </div>
+       </div>
+       <div class="col">
+         <div class="box purple">
+           Auto
+         </div>
+       </div>
+     </div>
+   </div>
+   <p>Auto width taken with content:</p>
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col">
+         <div class="box">Content</div>
+       </div>
+       <div class="col">
+         <div class="box sky">took width according</div>
+       </div>
+       <div class="col">
+         <div class="box">to it's width</div>
+       </div>
+     </div>
+   </div>
+    
+    <!-- JS links -->
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
