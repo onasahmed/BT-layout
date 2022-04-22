@@ -24,3 +24,7 @@
 .sky{
 	background-color: skyblue;
 }
+.height{
+	min-height: 200px;
+	background-color: green;
+}

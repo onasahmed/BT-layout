@@ -226,19 +226,95 @@
    </div>
    <p>Auto width taken with content:</p>
    <div class="container">
-     <div class="row justify-content-center">
-       <div class="col">
+     <div class="row justify-content-md-center">
+       <div class="col col-lg-auto">
          <div class="box">Content</div>
        </div>
-       <div class="col">
+       <div class="col col-lg-auto">
          <div class="box sky">took width according</div>
        </div>
-       <div class="col">
+       <div class="col col-lg-2">
          <div class="box">to it's width</div>
        </div>
      </div>
    </div>
-    
+   <p>content will take 4 column in md & greater screen and 6 in sm</p>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-4 col-6">
+         <div class="box">These boxes</div>
+       </div>
+       <div class="col-md-4 col-6">
+         <div class="box">will take 50%</div>
+       </div>
+       <div class="col-md-4 col-6">
+         <div class="box">Screen in sm</div>
+       </div>
+     </div>
+   </div>
+   <p>Work of row-cols to divide column automatcially:</p>
+   <div class="container-fluid">
+     <div class="row row-cols-3 row-cols-md-4">
+      <div class="col">
+        <div class="box">1</div>
+      </div>
+            <div class="col">
+        <div class="box">2</div>
+      </div>
+            <div class="col">
+        <div class="box">3</div>
+      </div>
+            <div class="col">
+        <div class="box">4</div>
+      </div>
+            <div class="col-6">
+        <div class="box">5</div>
+      </div>
+       
+     </div>
+   </div>
+   <p>Nesting:</p>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8">
+         <div class="row">
+           <div class="col-8">
+             <div class="box">Nesting Col</div>
+           </div>
+           <div class="col-4">
+             <div class="box">Nesting Col</div>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="box">No nesting</div>
+       </div>
+     </div>
+   </div>
+
+   <p>Align Col</p>
+   <div class="container">
+     <div class="row align-items-center height">
+      <div class="col">
+        <div class="box">center</div>
+      </div>
+      <div class="col">
+        <div class="box">center</div>
+      </div>
+      <div class="col">
+        <div class="box">center</div>
+      </div>
+
+     </div>
+   </div>
+    <p>Align self:</p>
+    <div class="container">
+      <div class="row height">
+        <div class="col-md-4 align-self-end">
+          <div class="box">align self end</div>
+        </div>
+      </div>
+    </div>
     <!-- JS links -->
     
     <script src="js/popper.min.js"></script>
